@@ -15,14 +15,14 @@ namespace ThreadsCS
 
         public static void Handler()
         {
-            Thread threadAlpha = new Thread(Epsilon);
-            threadAlpha.Start(_threadCounter++);
-            Thread threadBetha = new Thread(Epsilon);
-            threadBetha.Start(_threadCounter++);
-            Thread threadGamma = new Thread(Epsilon);
-            threadGamma.Start(_threadCounter++);
-            Thread threadDelta = new Thread(Epsilon);
-            threadDelta.Start(_threadCounter++);
+            int threadCount = 4;
+            Thread[] threads = new Thread[threadCount];
+
+            for (int i = 0; i < threadCount; i++)
+            {
+                threads[i] = new Thread(Epsilon);
+                threads[i].Start(_threadCounter++);
+            }
 
             Thread threadSigma = new Thread(Upsilon);
             threadSigma.Start();

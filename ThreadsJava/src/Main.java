@@ -1,10 +1,17 @@
+import java.sql.SQLData;
+
 public class Main {
     public static void main(String[] args) {
+
+        int threadsCount = 4;
+        ThreadsHandler[] threads = new ThreadsHandler[threadsCount];
         StopThreads upsilon = new StopThreads();
-        new ThreadsHandler(1, upsilon).start();
-        new ThreadsHandler(2, upsilon).start();
-        new ThreadsHandler(3, upsilon).start();
-        new ThreadsHandler(4, upsilon).start();
+
+        for (int i = 0; i < threadsCount; i++) {
+            threads[i] = new ThreadsHandler(i, upsilon);
+            new Thread(threads[i]).start();
+        }
+
         new Thread(upsilon).start();
     }
 }
