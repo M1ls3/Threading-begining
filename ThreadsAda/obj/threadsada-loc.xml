@@ -2,22 +2,46 @@
 <Locations >
   <Project >
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file />
+      <vfs_project>C:\.adaProject\lab1\threadsada.gpr</vfs_project>
+      <vfs_file>C:\.adaProject\lab1\src\main.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
       <vfs_project>C:\.adaProject\lab1\threadsada.gpr</vfs_project>
       <vfs_file>C:\.adaProject\lab1\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 16" line=" 26" >
+    <file_marker column=" 1" line=" 1" >
       <vfs_project>C:\.adaProject\lab1\threadsada.gpr</vfs_project>
       <vfs_file>C:\.adaProject\lab1\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 3" line=" 31" >
+    <file_marker column=" 1" line=" 1" >
       <vfs_project>C:\.adaProject\lab1\threadsada.gpr</vfs_project>
       <vfs_file>C:\.adaProject\lab1\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker current="true" column=" 12" line=" 28" >
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\.adaProject\lab1\threadsada.gpr</vfs_project>
+      <vfs_file>C:\.adaProject\lab1\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\.adaProject\lab1\threadsada.gpr</vfs_project>
+      <vfs_file>C:\.adaProject\lab1\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\.adaProject\lab1\threadsada.gpr</vfs_project>
+      <vfs_file>C:\.adaProject\lab1\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\.adaProject\lab1\threadsada.gpr</vfs_project>
+      <vfs_file>C:\.adaProject\lab1\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\.adaProject\lab1\threadsada.gpr</vfs_project>
+      <vfs_file>C:\.adaProject\lab1\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 3" line=" 37" >
+      <vfs_project>C:\.adaProject\lab1\threadsada.gpr</vfs_project>
+      <vfs_file>C:\.adaProject\lab1\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 39" >
       <vfs_project>C:\.adaProject\lab1\threadsada.gpr</vfs_project>
       <vfs_file>C:\.adaProject\lab1\src\main.adb</vfs_file>
     </file_marker>

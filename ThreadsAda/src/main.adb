@@ -1,37 +1,39 @@
 with Ada.Text_IO;
 
 procedure Main is
-   stop : Boolean := false;
-   pragma Atomic(stop);
+   Stop : Boolean := False;
+   pragma Atomic(Stop);
 
-   task type alpha_th;
-   task type beta_th;
+   task type Alpha_Th;
+   task type Beta_Th;
 
-   task body alpha_th is
-      sigma : Long_Long_Integer := 0;
+   task body Alpha_Th is
+      Sigma : Long_Long_Integer := 0;
    begin
       loop
-         sigma := sigma + 2;
-         exit when stop;
+         Sigma := Sigma + 2;
+         exit when Stop;
       end loop;
       delay 1.0;
 
-      Ada.Text_IO.Put_Line(sigma'Img);
-   end alpha_th;
+      Ada.Text_IO.Put_Line(Sigma'Img);
+   end Alpha_Th;
 
-   task body beta_th is
+   task body Beta_Th is
    begin
       delay 30.0;
-      stop := true;
-   end beta_th;
+      Stop := True;
+   end Beta_Th;
 
-   alpha : beta_th;
-   beta : alpha_th;
-   gamma : alpha_th;
-   deltaa : alpha_th;
-   eta : alpha_th;
-   teta : alpha_th;
+   Epsilon : Integer := 4; -- Epsilon is threads count
+
+   type Threads is array(1..Epsilon) of access Alpha_Th; --access Alpha_Th
+
+   All_Threads : Threads;
 
 begin
-   null;
+   for I in 1..Epsilon loop
+      All_Threads(I) := new Alpha_Th;
+   end loop;
+
 end Main;
